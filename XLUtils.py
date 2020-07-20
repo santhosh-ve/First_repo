@@ -1,3 +1,7 @@
+#Working with data from excel
+
+pip install openpyxl
+
 import openpyxl
 
 def getRowCount(fileName,sheetName):
