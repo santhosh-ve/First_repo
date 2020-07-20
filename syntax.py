@@ -1,8 +1,8 @@
-***Package***
+---Packages---
 
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 
+from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.action_chains import ActionChains
@@ -12,19 +12,19 @@ import time
 import openpyxl
 import logging
 
-#WebDriver
+***WebDriver***
 
 driver = webdriver.Chrome(executable_path = "",chrome_options=) #To open a browser
 driver.get("http://newtours.demoaut.com/") #To open url
 
-#Browser options
+***Browser options***
 from selenium.webdriver.chrome.options import Options
 
 chromeOptions=Options()
 chromeOptions.add_experimental_option("test",{"download.default_directory":"C:\NewFolder"})
 driver = webdriver.Chrome(chrome_options=chromeOptions) 
 
-#headless browser
+***headless browser***
 chrome_options = Options()
 chrome_options.add_argument("--headless")
 chrome_options.add_argument("--window-size=1920x1080")
