@@ -115,3 +115,21 @@ context_click()
 #To upload a file 
 driver.find_element("sample").send_keys("filepath")
 
+
+#Connect to db
+
+import cx_Oracle
+import os
+
+os.environ['PATH'] = "Oracle desktop client"
+
+#Establish db connection
+con = cx_Oracle.connect("username","password","servername")
+
+cur = con.cursor()
+query1 = ""
+query2 = ""
+cur.close()
+
+con.commit()
+con.close()
