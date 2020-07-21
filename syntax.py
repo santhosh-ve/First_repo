@@ -9,9 +9,13 @@ from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support import expected_conditins as EC
 from selenium.webdriver.common.action_chains import ActionChains
 
-import time
-import openpyxl
+import time		#To use data time
+import openpyxl		#To use excel
+import csv		#To use csv
 import logging
+import cx_Oracle	#Oracle
+import MySQLdb		#MySQL
+import pymssql 		#MsSQL
 
 ----WebDriver----
 
